@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 import cloudinary
@@ -18,7 +18,7 @@ import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -87,11 +87,11 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'darbqrrn3l610s',
-        'USER': 'wqohwgyrbbmpew',
-        'HOST': 'ec2-44-197-40-76.compute-1.amazonaws.com',
+        'NAME': 'dd84l3oluvcdpc',
+        'USER': 'weuxtzcafurwxc',
+        'HOST': 'ec2-54-158-247-97.compute-1.amazonaws.com',
         'PORT': 5432,
-        'PASSWORD': 'e8412a04363fa57fd942e9044f98d591c97c7633a2e1b8d72524b8b569b42ac6',
+        'PASSWORD': 'b47d51534944344cd250caf47a22ebcae2acbbefd80bae6bb3341d437e82fab4',
     }
 }
 
@@ -135,6 +135,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
      BASE_DIR /'static'
+
+
+
 ]
 cloudinary.config( 
   cloud_name = "techis-nitesh", 
@@ -147,3 +150,8 @@ cloudinary.config(
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
