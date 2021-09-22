@@ -248,7 +248,7 @@ textarea {
   color: #fff;
 }
 
-}
+
 
 .content .post_form .logo1 img {
     width:15%;
@@ -307,10 +307,10 @@ textarea {
 
 #update-button {
   border-radius: 20px;
-  background-color: #209bf0;
+  background-color: rgb(87, 231, 20) !important;
   width: 80px;
   height: 35px;
-  color: hsl(108, 94%, 49%);
+  color: rgb(227, 240, 224);
   font-weight: bold;
   border: none;
 }
