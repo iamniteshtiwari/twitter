@@ -51,7 +51,7 @@
          <p> {{ post.body }}<br></p> 
          </br>
         {% if post.image.url %}
-        <img class="post-border" src="{{ post.image.url }}">
+        <img class="post-border" src="{{ post.image.url }}" style="width :400px; height:400px;">
                 {% endif %}
                 <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
                         {% csrf_token %}

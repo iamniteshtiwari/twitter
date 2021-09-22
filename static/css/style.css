@@ -310,14 +310,14 @@ textarea {
   background-color: #209bf0;
   width: 80px;
   height: 35px;
-  color: #fff;
+  color: hsl(108, 94%, 49%);
   font-weight: bold;
   border: none;
 }
 
 .cancel-button {
   border-radius: 20px;
-  background-color: #dc3545;
+  background-color: hsl(22, 98%, 50%);
   margin-right: 0.5em;
   align-items: right;
   width: 80px !important;
